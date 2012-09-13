@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery-ObjectBuilder Sample</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="jquery-objectbuilder.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            var object = $.objectbuilder.toObject({ selectors: 'input[type=text]', prefix: 'employee' });
+        });
+    </script>
+</head>
+<body>
+    <table cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    jQuery Object Builder - Employee and It's Addresses
+                </th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Personal Details
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        First Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="FirstName" value="Sachin" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Last Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="LastName" value="Pawar" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        DOB:</label>
+                </td>
+                <td>
+                    <input type="text" name="DOB" value="07/28/1983" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Primary Address
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Country</label>
+                </td>
+                <td>
+                    <input type="text" name="Addresses[0].Country" value="India" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        City:</label>
+                </td>
+                <td>
+                    <input type="text" name="Addresses[0].City" value="Pune" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Zip:</label>
+                </td>
+                <td>
+                    <input type="text" name="Addresses[0].Zip" value="411052" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Alternate Address
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Country</label>
+                </td>
+                <td>
+                    <input type="text" name="Addresses[1].Country" value="India" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        City:</label>
+                </td>
+                <td>
+                    <input type="text" name="Addresses[1].City" value="Pune" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Zip:</label>
+                </td>
+                <td>
+                    <input type="text" name="Addresses[1].Zip" value="411052" />
+                </td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
