@@ -7,7 +7,7 @@
 
         var defaults =
         {
-            prefix: '',
+            parent: '',
             selectors: ''
         };
 
@@ -141,6 +141,6 @@
             }
             return result;
         }
-        return convert(options.selectors, options.prefix);
+        return convert(options.selectors, options.parent);
     };
 })(jQuery);

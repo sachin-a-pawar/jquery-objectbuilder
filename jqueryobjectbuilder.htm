@@ -7,7 +7,8 @@
     <script type="text/javascript">
         $(document).ready(function ()
         {
-            var object = $.objectbuilder.toObject({ selectors: 'input[type=text]', prefix: 'employee' });
+            var object = $.objectbuilder.toObject({ selectors: 'input[type=text]', parent: 'employee' });
+            //alert(object.employee.FirstName + " " + object.employee.LastName);
         });
     </script>
 </head>
